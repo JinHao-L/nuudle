@@ -85,13 +85,15 @@ Follow these steps to get started:
 1. Save the file to a folder where you want to store the Nuddle application and it's related data.
 ![GitHub download page](images/QuickStart2.png)
 
-1. Double-click the `Nuudle application` to start Nuudle up. 
-An application window similar to the one below should appear in a few seconds.<br>
+1. Double-click the Nuudle application to start Nuudle up. 
 ![GitHub download page](images/QuickStart3.png)
 
-    * Notice how Nuudle comes with sample data to get you started.<br>
+    * An application window similar to the one below should appear in a few seconds.
+    Notice how Nuudle comes with sample data to get you started.<br>
     ![Ui](images/Ui.png)
 1. Congratulations! Nuudle is now ready for your perusal :smiley:
+
+<div style="page-break-after: always;"></div>
 
 ### Using Nuudle
 
@@ -105,6 +107,8 @@ This section will walk you through the layout of Nuudle.
 The layout of Nuudle can be divided into 2 main areas:
 1. The command execution area
 2. The main viewing area
+
+<div style="page-break-after: always;"></div>
 
 #### Executing commands
 
@@ -137,6 +141,8 @@ To learn more about the various commands used in Nuudle, head down to our [Comma
 
 Alternatively, you can visit our [Command Summary](#command-summary) section to get a quick overview of Nuudle's commands.
 
+<div style="page-break-after: always;"></div>
+
 #### Viewing data
 
 `[written by: Lim Jin Hao]`
@@ -154,7 +160,6 @@ The main viewing area consists of the *Patient Book*, the *Appointment Book* and
 
   * The *Patient Details* are neatly displayed at the bottom for you to easily check and identify a patient.
 
-<br>
 * The *Appointment Book* contains details about the appointments created by Nuudle. Here we take a look at a single entry in the Appointment Book 
 ![AppointmentCard](images/AppointmentCard.png)
 
@@ -173,7 +178,6 @@ The main viewing area consists of the *Patient Book*, the *Appointment Book* and
   * The *Patient Details* in the appointment entry provides the basic information of the patient, namely the name and the contact number.
   This allows you to easily keep track of who will be coming for the appointment and also call up the patient, if necessary.
 
-<br>
 * Lastly, the *Appointment Overview* provides simple statistics about the appointments stored in Nuudle.
 
   ![AppointmentOverview](images/AppointmentOverview.png)
@@ -226,7 +230,7 @@ This section emphasises on the common format across all command input.
 * Date and time can be written using various commonly used formats or even using natural language.
 A summary of the supported formats and languages is shown in the table below:
 
-<div markdown="block" style="background-color: #f8f9fa; position: center" >
+<div markdown="block" style="page-break-before: always; background-color: #f8f9fa; position: center" >
 
 Formatted Date | Natural Date | Formatted Time | Natural Time
 :---------------:|:----------------:|:----------------:|:----------------:
@@ -263,6 +267,7 @@ Formatted Date | Natural Date | Formatted Time | Natural Time
     * Please note that the `TIME` used for scheduling an appointment must be set in the future.
     * Please refer to the following [link](#command-format) for the different `TIME` formats we support in our Nuudle application.
 
+<div style="page-break-after: always;"></div>
 
 * `APPT_INDEX` & `PATIENT_INDEX`
     * Unlike `DATE` and `TIME`, we do not require users to enter a prefix before the `INDEX` value.
@@ -295,6 +300,8 @@ Opens a new window which shows the commonly used commands, and a link to access 
 
 Format: `help`
 
+<div style="page-break-after: always;"></div>
+
 #### Undoing previous command : `undo`
 
 `[written by: Yang Yue]`
@@ -326,6 +333,8 @@ Examples:
   `undo` (reverses the `clear` command)<br>
   `undo` (reverses the `cancel 1` command)
 
+<div style="page-break-after: always;"></div>
+
 Step-by-step illustration:
 1. Initial state: <br>
 ![UndoCommandInitialState](images/UndoRedoInitialState_UG.png)
@@ -338,6 +347,8 @@ The first patient `Alex Yeoh` is deleted.
 ![UndoCommandStep3](images/UndoStep3_UG.png) <br>
 The `undo` command cancels the last undoable command `delete 1`, so that 
 the patient `Alex Yeoh` comes back to the list again.
+
+<div style="page-break-after: always;"></div>
 
 #### Redoing the previously undone command : `redo`
 
@@ -370,6 +381,8 @@ Examples:
   `redo` (reapplies the `cancel 1` command)<br>
   `redo` (reapplies the `clear` command)
 
+<div style="page-break-after: always;"></div>
+
 Step-by-step illustration:
 1. Initial state: <br>
 ![RedoCommandInitialState](images/UndoRedoInitialState_UG.png)
@@ -385,6 +398,8 @@ All the data comes back.
 ![RedoCommandStep4](images/RedoStep4_UG.png) <br>
 Redo the `clear` command, which removes all the data again.
 
+<div style="page-break-after: always;"></div>
+
 #### Clearing all data : `clear`
 
 `[written by: Lim Jin Hao]`
@@ -397,7 +412,10 @@ Step-by-step illustration:<br>
 1. Suppose you would like to clear the sample data to officially start using Nuudle from scratch, you can simply type in the command `clear` and press <kbd>Enter</kbd>.<br>
 ![ClearBefore](images/ClearCommand1.png)
 
-2. All patient and appointment entries are cleared. You can now officially start adding your clinic's patient and appointment entries.<br>
+  <div style="page-break-after: always;"></div>
+
+{:start="2"}
+2. As shown below, all patient and appointment entries are cleared. You can now officially start adding your clinic's patient and appointment entries.<br>
 ![ClearAfter](images/ClearCommand2.png)
 
 #### Exiting the program : `exit`
@@ -405,6 +423,8 @@ Step-by-step illustration:<br>
 Exits Nuudle.
 
 Format: `exit`
+
+<div style="page-break-after: always;"></div>
 
 #### Retrieving previously entered commands
 
@@ -474,6 +494,8 @@ Examples:
 * `add n/John Doe i/S9730284G p/98765432 a/John street, block 123, #01-01`
 * `add n/Betsy Crowe i/S9123456G t/friend a/NUS Utown p/1234567 t/asthma`
 
+<div style="page-break-after: always;"></div>
+
 Step-by-step illustration:
 1. Enter `add n/Nuudle Numberone i/S7564832U p/84729741 a/UTown r/first visit` in the *command box*.<br>
 ![AddCommand1](images/AddCommand1.png)
@@ -482,16 +504,18 @@ Step-by-step illustration:
 The patient is now added to the patient book.<br>
 ![AddCommand2](images/AddCommand2.png)
 
+<div style="page-break-after: always;"></div>
+
 #### Editing a patient : `edit`
 
-`[written by: Jin Hao]`
+`[written by: Lim Jin Hao]`
 
 Edits a patient's particulars. Existing appointments involving the edited patient will be updated accordingly.
 
 Format: `edit PATIENT_INDEX [n/NAME] [i/NRIC] [p/PHONE_NUMBER] [a/ADDRESS] [r/REMARK] [t/TAG]…​`
 
 * Edits the patient at the specified `PATIENT_INDEX`.
-* At least one of the optional fields must be provided to execute the `edit` command.
+* At least one of the optional fields must be provided to execute the edit command.
 * The patient's existing particulars will be updated according to the input values.
 * When editing tags, the existing tags of the patient will be removed i.e adding of tags is not cumulative.
 * You can remove all the patients' tags by typing `t/` without specifying any tags after it.
@@ -500,13 +524,19 @@ Examples:
 *  `edit 1 p/91234567 a/College Avenue 8` Edits the phone number and email address of the 1st patient to be `91234567` and `College Avenue 8` respectively.
 *  `edit 2 n/Betsy Crower t/` Edits the name of the 2nd patient to be `Betsy Crower` and deletes all existing tags.
 
+<div style="page-break-after: always;"></div>
+
 Step-by-step illustration:<br>
-1. Suppose a patient, Charlotte, changes her phone number from `84812305` to `91234567`, simply type `edit 3 p/91234567` in the *command box* and press <kbd>Enter</kbd>.<br>
+1. Suppose you want to update Charlotte's phone number from `84812305` to `91234567`. To do this you can simply type `edit 3 p/91234567` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![EditCommand1](images/EditCommand1.png)
 
-2. Charlotte's phone number is now updated and the change is also reflected in the relevant appointments.
+<div style="page-break-after: always;"></div>
+
+2. As shown below, Charlotte's phone number is now updated and the change is also reflected in the relevant appointments.
 The particulars of the edited patient is displayed in the *result display box*.<br>
 ![EditCommand2](images/EditCommand2.png)
+
+<div style="page-break-after: always;"></div>
 
 #### Deleting a patient : `delete`
 
@@ -524,13 +554,17 @@ Examples:
 * `delete 2` <br>Deletes the 2nd patient displayed in the patient book.
 * Calling `find Betsy` followed by `delete 1` deletes the 1st patient displayed in the resulting patient book of the `find` command.
 
-Step by step illustration:
-1. Suppose you want to delete Alex, which is currently at the top of the patient book, from your database.<br>Simply enter `delete 1` in the command box and press <kbd>Enter</kbd>.<br>
+<div style="page-break-after: always;"></div>
+
+Step-by-step illustration:
+1. Suppose you want to delete Alex, which is currently at the top of the patient book, from your database.<br>Simply enter `delete 1` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![DeleteCommand](images/DeleteCommand.png)
 
 1. Alex is now deleted from the database and the patient book is updated accordingly. 
 ![DeleteCommand](images/DeleteCommand2.png)
 
+
+<div style="page-break-after: always;"></div>
 
 #### Adding a remark to a patient: `remark`
 
@@ -557,11 +591,11 @@ Examples to add remark:
 *  `remark 2 r/Has been visiting Dr John` <br>Adds a remark `Has been visiting Dr John` to the patient currently displayed second from the top in the patient list.
 *  `remark 1 r/Can only converse in mandarin` <br>Adds a remark `Can only converse in mandarin` to the patient currently displayed at the top of the patient list.
 
-Step by step illustration for adding a remark:
+Step-by-step illustration for adding a remark:
 1. Suppose you want to add additional information for your regular patient, Bernice, by indicating her preferred dentist.
-<br>Simply enter `remark 2 r/Has been visiting Dr John` in the command box and press <kbd>Enter</kbd>.<br>
+<br>Simply enter `remark 2 r/Has been visiting Dr John` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![Command for 'Add remark'](images/addRemark.png)
-1. Bernice’s remark is now updated and the particulars of the added remark is displayed in the result display box.
+1. Bernice’s remark is now updated and the particulars of the added remark is displayed in the *result display box*.
 ![Result for 'Add remark'](images/AddRemark2.png)
 
 <br>
@@ -570,14 +604,16 @@ Examples to delete the remark for a patient at index 1:
 * `remark 1 r/`
 * `remark 1`
 
-Step by step illustration for deleting a remark:
+Step-by-step illustration for deleting a remark:
 
-1. Suppose you want to delete the remark data for Bernice, simply enter `remark 2` in the command box and press <kbd>Enter</kbd>.<br>
+1. Suppose you want to delete the remark data for Bernice, simply enter `remark 2` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![Command for 'Delete remark'](images/DeleteRemark.png)
 
-1. Bernice’s remark is now deleted and the particulars of the deleted remark is displayed in the result display box.<br>
+1. Bernice’s remark is now deleted and the particulars of the deleted remark is displayed in the *result display box*.<br>
 ![Result for 'Delete remark'](images/DeleteRemark2.png)
 <br>
+
+<div style="page-break-after: always;"></div>
 
 #### Listing all patients : `list`
 
@@ -587,12 +623,14 @@ If you like to reset the displayed patient or appointment book to it's original 
 
 Format: `list`
 
-Step by step illustration:
-1. Suppose you used the `find` command previously to locate appointments that belonged to a patient, Alex, and now wish to reset the displayed lists to their original states, simply type `list` in the command box and press <kbd>Enter</kbd>.<br>
+Step-by-step illustration:
+1. Suppose you used the `find` command previously to locate appointments that belonged to a patient, Alex, and now wish to reset the displayed lists to their original states, simply type `list` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![ListCommand](images/ListCommand.png)
 
 2. Both the appointment and patient books are updated to display all patient and appointment data.
 ![ListCommand](images/ListCommand2.png)
+
+<div style="page-break-after: always;"></div>
 
 #### Locating patients by name, NRIC or phone number : `find`
 
@@ -615,7 +653,7 @@ Examples:
 * `find n/John` returns patients whose name contains `john`.
 * `find n/alex p/99998888 i/S1234567I` returns patients whose name contains `Alex`, or whose phone number is `99998888`, or whose NRIC number is `S1234567I`.<br>
 
-Step by step illustration:<br>
+Step-by-step illustration:<br>
 Suppose you want to find a patient named as `alex` or with a phone number of `99998888`, or with NRIC number of `S1234567I`, you can:
 1. Enter `find n/alex p/99998888 i/S1234567I`.<br>
 ![FindCommand1](images/Find1.png)
@@ -655,6 +693,8 @@ Suppose `Alex Yeoh`, the first patient in the list calls to book an appointment 
 2. The information of the added appointment is displayed in the *result display box.*<br>
 ![AssignCommand2](images/Assign2.png)
 
+<div style="page-break-after: always;"></div>
+
 #### Reschedules an existing appointment: `change`
 
 `[written by: Low Ming Lim]`
@@ -685,10 +725,10 @@ Examples:
 * If you wish to **modify** the duration of an existing appointment, simply call the command in the following format:
     * `change 1 dur/NEW_DURATION`: <br>Extends the duration of the first appointment at `APPT_INDEX` 1 to the `NEW_DURATION` with the same date and start time.
 
-Step by step illustration:
+Step-by-step illustration:
 <br>Example 1: Changing date
 1. Suppose a patient, Charlotte, wants to reschedule her appointment to the following day at the same time. <br>Simply type 
-`change 1 d/tomorrow` in the command box and press <kbd>Enter</kbd>.<br>
+`change 1 d/tomorrow` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![Change Command Date Example](images/ChangeCommandDate.png)
 
 1. Charlotte's original appointment on the 9th of November, 3-4pm is now successfully rescheduled to 10th November at the same time.
@@ -697,12 +737,14 @@ Step by step illustration:
 <br>Example 2: Changing time and duration
 1. Suppose the nurse received updates from the dentist and is now required to increase the duration of Charlotte's appointment to 1.5 hours
 and as a result, has to push her appointment time-slot back to 7pm.
-<br>Simply enter `change 4 t/1900 dur/90` in the command box and press <kbd>Enter</kbd>.<br>
+<br>Simply enter `change 4 t/1900 dur/90` in the *command box* and press <kbd>Enter</kbd>.<br>
  ![Change Command Date result](images/ChangeCommandTime.png)
 1. Charlotte's appointment is now shifted to 7pm with a new duration of 1.5 hour, thus resulting in a new end time at 8:30pm. 
  ![Change Command Date result](images/ChangeCommandTime2.png)
 
 * Any other optional field combinations are supported as well.
+
+<div style="page-break-after: always;"></div>
 
 #### Canceling an appointment : `cancel`
 
@@ -729,6 +771,8 @@ The cancelled appointment details is also displayed in the *result display box*.
 ![CancelCommand3](images/CancelCommand3.png)
 
 
+<div style="page-break-after: always;"></div>
+
 #### Marking an appointment as done : `done`
 
 `[written by: Yang Yue]`
@@ -753,6 +797,8 @@ Step-by-step illustration:
 2. The *result display box* shows the success message and the appointment is marked as down <br>
 ![DoneCommand2](images/DoneCommand2.png)
 
+<div style="page-break-after: always;"></div>
+
 #### Listing upcoming appointments by date : `view`
 
 `[written by: Zhang Wanlin]`
@@ -769,13 +815,15 @@ Example:
 * `view` shows the list of all upcoming appointments in chronological order.
 * `view d/4-Aug-2020` shows the list of appointments happening on 04/08/2020.
 
-Step by step illustration:<br>
+Step-by-step illustration:<br>
 Suppose you want to check all the appointments on `05 nov 2021`, you can:
 1. Enter `view d/05 Nov 2021`.<br>
 ![ViewCommand1](images/View1.png)
 
 2. The number of appointments on that date are displayed in the *result display box* and the appointment details are displayed in the appointment book.<br>
 ![ViewCommand2](images/View2.png)
+
+<div style="page-break-after: always;"></div>
 
 #### Listing available time slots by date : `avail`
 

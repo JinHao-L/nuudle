@@ -338,7 +338,7 @@ Here below is an example usage scenario and how the `assign` feature works at ea
 
 2. The input is handled by the `LogicManager#execute(String)`, which then calls and passes the input to the `NuudleParser#parseCommand(String)` method.
 
-<div style="page-break-after: always;"></div>
+  <div style="page-break-after: always;"></div>
 
 {:start="3"}
 3. `NuudleParser` finds out the command word `assign` in the user input and creates an `AssignCommandParser`to parse the input according to the format specified for `AssignCommand`.
@@ -720,7 +720,7 @@ Given below is an example usage scenario and how the edit mechanism behaves at e
 
 8: `AvailableCommand` obtains a copy of the `FilteredAppointmentList` by calling the `Model#getFilteredAppointmentList()` method.
 
-<div style="page-break-after: always;"></div>
+  <div style="page-break-after: always;"></div>
 
 {:start="9"}
 9: `AvailableCommand` creates a `timeSlotsMessage` by calling the  `Model#findAvailableTimeSlots(List<Appointment>, Boolean)` method.
