@@ -395,10 +395,16 @@ Step-by-step illustration:
 2. Input `clear`: <br>
 ![RedoCommandStep2](images/RedoStep2_UG.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start="3"}
 3. Input `Undo`: <br>
 ![RedoCommandStep3](images/RedoStep3_UG.png) <br>
 All the data comes back.
 
+  <div style="page-break-after: always;"></div>
+
+{:start="4"}
 4. Input `Redo`: <br>
 ![RedoCommandStep4](images/RedoStep4_UG.png) <br>
 Redo the `clear` command, which removes all the data again.
@@ -505,6 +511,9 @@ Step-by-step illustration:
 1. Enter `add n/Nuudle Numberone i/S7564832U p/84729741 a/UTown r/first visit` in the *command box*.<br>
 ![AddCommand1](images/AddCommand1.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start="2"}
 2. The information of the added patient is displayed in the *result display box*.
 The patient is now added to the patient book.<br>
 ![AddCommand2](images/AddCommand2.png)
@@ -606,7 +615,7 @@ Step-by-step illustration for adding a remark:
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 1. Bernice’s remark is now updated and the particulars of the added remark is displayed in the *result display box*.
 ![Result for 'Add remark'](images/AddRemark2.png)
 
@@ -624,7 +633,7 @@ Step-by-step illustration for deleting a remark:
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 1. Bernice’s remark is now deleted and the particulars of the deleted remark is displayed in the *result display box*.<br>
 ![Result for 'Delete remark'](images/DeleteRemark2.png)
 <br>
@@ -645,7 +654,7 @@ Step-by-step illustration:
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 2. Both the appointment and patient books are updated to display all patient and appointment data.
 ![ListCommand](images/ListCommand2.png)
 
@@ -681,7 +690,7 @@ Suppose you want to find a patient named as `alex` or with a phone number of `99
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 2. The number of patients found and the number of appointments of these patients are displayed in the *result display box*, and the corresponding patient and appointment details are displayed in the patient and appointment book respectively.<br>
 ![FindCommand2](images/Find2.png)
 
@@ -709,11 +718,16 @@ Examples:
 * `assign 1 d/Sunday t/2pm dur/40` books an appointment of 40 minutes on the upcoming Sunday, 2am for the 1st patient in the list.
 * `assign 3 d/02-03-2021 t/1130` books an appointment of 60 minutes on 02/03/2021, 11:30am for the 3rd patient in the list.
 
+<div style="page-break-after: always;"></div>
+
 Step-by-step illustration:<br>
 Suppose `Alex Yeoh`, the first patient in the list calls to book an appointment on `02 Jan 2021` at `1130`, you can:
 1. Enter `assign 1 d/02 Jan 2021 t/1130` in the *command box*.<br>
 ![AssignCommand1](images/Assign1.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start="2"}
 2. The information of the added appointment is displayed in the *result display box.*<br>
 ![AssignCommand2](images/Assign2.png)
 
@@ -759,7 +773,7 @@ Step-by-step illustration:
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 1. Charlotte's original appointment on the 9th of November, 3-4pm is now successfully rescheduled to 10th November at the same time.
  ![Change Command Date result](images/ChangeCommandDate2.png)
 
@@ -773,7 +787,7 @@ and as a result, has to push her appointment time-slot back to 7pm.
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 1. Charlotte's appointment is now shifted to 7pm with a new duration of 1.5 hour, thus resulting in a new end time at 8:30pm. 
  ![Change Command Date result](images/ChangeCommandTime2.png)
 
@@ -799,14 +813,14 @@ Step-by-step illustration:<br>
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 2. Next, look for the 10.30am appointment and cancel it using the `cancel` command.
 Here, we use `cancel 1` as the appointment to cancel is the first appointment in the book.<br>
 ![CancelCommand2](images/CancelCommand2.png)
 
   <div style="page-break-after: always;"></div>
 
-{:start:"3"}
+{:start="3"}
 3. The 10.30am appointment is cancelled and removed from the appointment book.
 The cancelled appointment details is also displayed in the *result display box*.<br>
 ![CancelCommand3](images/CancelCommand3.png)
@@ -837,7 +851,7 @@ Step-by-step illustration:
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 2. The *result display box* shows the success message and the appointment is marked as down <br>
 ![DoneCommand2](images/DoneCommand2.png)
 
@@ -866,7 +880,7 @@ Suppose you want to check all the appointments on `05 nov 2021`, you can:
 
   <div style="page-break-after: always;"></div>
 
-{:start:"2"}
+{:start="2"}
 2. The number of appointments on that date are displayed in the *result display box* and the appointment details are displayed in the appointment book.<br>
 ![ViewCommand2](images/View2.png)
 
