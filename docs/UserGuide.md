@@ -274,8 +274,13 @@ Formatted Date | Natural Date | Formatted Time | Natural Time
     * Please note that the index used **must be a positive integer**. For example, valid index values include 1, 2, 3, etc …
     * The `APPT_INDEX` refers to the number shown in the displayed appointment book located on the right side of the UI.
     ![Appointment Index](images/CommandFormatAppt.png)
+    
+  <div style="page-break-after: always;"></div>
+
     * The `PATIENT_INDEX` refers to the number shown in the displayed patient book located on the left side of the UI.
     ![Patient Index](images/CommandFormatPatient.png)
+
+<div style="page-break-after: always;"></div>
 
 * `DURATION`
     * We measure our `DURATION` inputs in minutes. For example, to enter a `DURATION` of 1 hour, kindly use `dur/60` as the input value.
@@ -418,13 +423,13 @@ Step-by-step illustration:<br>
 2. As shown below, all patient and appointment entries are cleared. You can now officially start adding your clinic's patient and appointment entries.<br>
 ![ClearAfter](images/ClearCommand2.png)
 
+<div style="page-break-after: always;"></div>
+
 #### Exiting the program : `exit`
 
 Exits Nuudle.
 
 Format: `exit`
-
-<div style="page-break-after: always;"></div>
 
 #### Retrieving previously entered commands
 
@@ -530,8 +535,9 @@ Step-by-step illustration:<br>
 1. Suppose you want to update Charlotte's phone number from `84812305` to `91234567`. To do this you can simply type `edit 3 p/91234567` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![EditCommand1](images/EditCommand1.png)
 
-<div style="page-break-after: always;"></div>
+  <div style="page-break-after: always;"></div>
 
+{:start="2"}
 2. As shown below, Charlotte's phone number is now updated and the change is also reflected in the relevant appointments.
 The particulars of the edited patient is displayed in the *result display box*.<br>
 ![EditCommand2](images/EditCommand2.png)
@@ -591,14 +597,21 @@ Examples to add remark:
 *  `remark 2 r/Has been visiting Dr John` <br>Adds a remark `Has been visiting Dr John` to the patient currently displayed second from the top in the patient list.
 *  `remark 1 r/Can only converse in mandarin` <br>Adds a remark `Can only converse in mandarin` to the patient currently displayed at the top of the patient list.
 
+<div style="page-break-after: always;"></div>
+
 Step-by-step illustration for adding a remark:
 1. Suppose you want to add additional information for your regular patient, Bernice, by indicating her preferred dentist.
 <br>Simply enter `remark 2 r/Has been visiting Dr John` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![Command for 'Add remark'](images/addRemark.png)
+
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 1. Bernice’s remark is now updated and the particulars of the added remark is displayed in the *result display box*.
 ![Result for 'Add remark'](images/AddRemark2.png)
 
-<br>
+<div style="page-break-after: always;"></div>
+
 Examples to delete the remark for a patient at index 1:
 
 * `remark 1 r/`
@@ -609,6 +622,9 @@ Step-by-step illustration for deleting a remark:
 1. Suppose you want to delete the remark data for Bernice, simply enter `remark 2` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![Command for 'Delete remark'](images/DeleteRemark.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 1. Bernice’s remark is now deleted and the particulars of the deleted remark is displayed in the *result display box*.<br>
 ![Result for 'Delete remark'](images/DeleteRemark2.png)
 <br>
@@ -627,6 +643,9 @@ Step-by-step illustration:
 1. Suppose you used the `find` command previously to locate appointments that belonged to a patient, Alex, and now wish to reset the displayed lists to their original states, simply type `list` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![ListCommand](images/ListCommand.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 2. Both the appointment and patient books are updated to display all patient and appointment data.
 ![ListCommand](images/ListCommand2.png)
 
@@ -653,11 +672,16 @@ Examples:
 * `find n/John` returns patients whose name contains `john`.
 * `find n/alex p/99998888 i/S1234567I` returns patients whose name contains `Alex`, or whose phone number is `99998888`, or whose NRIC number is `S1234567I`.<br>
 
+<div style="page-break-after: always;"></div>
+
 Step-by-step illustration:<br>
 Suppose you want to find a patient named as `alex` or with a phone number of `99998888`, or with NRIC number of `S1234567I`, you can:
 1. Enter `find n/alex p/99998888 i/S1234567I`.<br>
 ![FindCommand1](images/Find1.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 2. The number of patients found and the number of appointments of these patients are displayed in the *result display box*, and the corresponding patient and appointment details are displayed in the patient and appointment book respectively.<br>
 ![FindCommand2](images/Find2.png)
 
@@ -725,20 +749,31 @@ Examples:
 * If you wish to **modify** the duration of an existing appointment, simply call the command in the following format:
     * `change 1 dur/NEW_DURATION`: <br>Extends the duration of the first appointment at `APPT_INDEX` 1 to the `NEW_DURATION` with the same date and start time.
 
+<div style="page-break-after: always;"></div>
+  
 Step-by-step illustration:
 <br>Example 1: Changing date
 1. Suppose a patient, Charlotte, wants to reschedule her appointment to the following day at the same time. <br>Simply type 
 `change 1 d/tomorrow` in the *command box* and press <kbd>Enter</kbd>.<br>
 ![Change Command Date Example](images/ChangeCommandDate.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 1. Charlotte's original appointment on the 9th of November, 3-4pm is now successfully rescheduled to 10th November at the same time.
  ![Change Command Date result](images/ChangeCommandDate2.png)
+
+<div style="page-break-after: always;"></div>
 
 <br>Example 2: Changing time and duration
 1. Suppose the nurse received updates from the dentist and is now required to increase the duration of Charlotte's appointment to 1.5 hours
 and as a result, has to push her appointment time-slot back to 7pm.
 <br>Simply enter `change 4 t/1900 dur/90` in the *command box* and press <kbd>Enter</kbd>.<br>
  ![Change Command Date result](images/ChangeCommandTime.png)
+
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 1. Charlotte's appointment is now shifted to 7pm with a new duration of 1.5 hour, thus resulting in a new end time at 8:30pm. 
  ![Change Command Date result](images/ChangeCommandTime2.png)
 
@@ -762,10 +797,16 @@ Step-by-step illustration:<br>
 1. Suppose a patient calls to cancel his 10.30am appointment tomorrow, first get all the appointments for tomorrow by using the `view t/tomorrow` command.<br>
 ![CancelCommand1](images/CancelCommand1.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 2. Next, look for the 10.30am appointment and cancel it using the `cancel` command.
 Here, we use `cancel 1` as the appointment to cancel is the first appointment in the book.<br>
 ![CancelCommand2](images/CancelCommand2.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"3"}
 3. The 10.30am appointment is cancelled and removed from the appointment book.
 The cancelled appointment details is also displayed in the *result display box*.<br>
 ![CancelCommand3](images/CancelCommand3.png)
@@ -794,6 +835,9 @@ Step-by-step illustration:
 1. Enter `done 1` in the *command box* <br>
 ![DoneCommand1](images/DoneCommand1.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 2. The *result display box* shows the success message and the appointment is marked as down <br>
 ![DoneCommand2](images/DoneCommand2.png)
 
@@ -820,6 +864,9 @@ Suppose you want to check all the appointments on `05 nov 2021`, you can:
 1. Enter `view d/05 Nov 2021`.<br>
 ![ViewCommand1](images/View1.png)
 
+  <div style="page-break-after: always;"></div>
+
+{:start:"2"}
 2. The number of appointments on that date are displayed in the *result display box* and the appointment details are displayed in the appointment book.<br>
 ![ViewCommand2](images/View2.png)
 
@@ -842,6 +889,8 @@ Format: `avail d/DATE`
 Example:
 * `avail d/4-Aug-2020` shows the list of all available (free) time slots within the operation time of the clinic on 04/08/2020.
 * `avail d/today` shows the list of all available (free) time slots within the operation time of the clinic today.
+
+<div style="page-break-after: always;"></div>
 
 Step-by-step illustration:
 1. Enter `avail d/05-Nov-2021` in the *command box*.<br>
