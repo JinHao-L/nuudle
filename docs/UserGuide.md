@@ -11,6 +11,8 @@ title: User Guide
 
 ## Introduction
 
+`[written by: Xin Zhe]`
+
 Welcome to Nuudle’s User Guide! :smiley:
 
 Looking for a wonderful solution to simplify the complicated process of clinic management? Look no further!
@@ -26,6 +28,8 @@ Interested? Continue reading on to explore the wonders of Nuudle and enhance the
 <div style="page-break-after: always;"></div>
 
 ## About
+
+`[written by: Xin Zhe]`
 
 This document provides you with all necessary information on the installation and complete usage of Nuudle. You can find comprehensive descriptions of all available features in our [Commands](#commands) section and [Quick Start](#quick-start) section will help you with setting up.
 
@@ -57,11 +61,15 @@ The guide also uses the following symbols and formatting:
 
 ## Quick Start
 
+`[written by: Xin Zhe]`
+
 This section provides a step-by-step guide on how to install Nuudle and get it to run on your computer. It also shows the different sections that make up Nuudle's user interface and various sample commands.
 
 Let's get started! :smiley:
 
 ### Installing Nuudle
+
+`[written by: Low Ming Lim]`
 
 Follow these steps to get started:
 
@@ -87,6 +95,8 @@ An application window similar to the one below should appear in a few seconds.<b
 
 ### Using Nuudle
 
+`[written by: Lim Jin Hao]`
+
 This section will walk you through the layout of Nuudle. 
 
 
@@ -97,6 +107,8 @@ The layout of Nuudle can be divided into 2 main areas:
 2. The main viewing area
 
 #### Executing commands
+
+`[written by: Lim Jin Hao]`
 
 The command execution area consists of the *Command Box* and the *Result Display Box*.
 
@@ -126,6 +138,8 @@ To learn more about the various commands used in Nuudle, head down to our [Comma
 Alternatively, you can visit our [Command Summary](#command-summary) section to get a quick overview of Nuudle's commands.
 
 #### Viewing data
+
+`[written by: Lim Jin Hao]`
 
 The main viewing area consists of the *Patient Book*, the *Appointment Book* and the *Appointment Overview*.
 
@@ -173,6 +187,8 @@ The main viewing area consists of the *Patient Book*, the *Appointment Book* and
 
 ## Commands
 
+`[written by: Zhang Wanlin]`
+
 The command is the main way to schedule appointment for a patient with Nuudle.
 
 This section introduces three types of commands:
@@ -190,6 +206,8 @@ This section emphasises on the common format across all command input.
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Notes about the command format:**<br>
+
+`[written by: Zhang Wanlin]`
 
 * Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
   e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
@@ -233,6 +251,8 @@ Formatted Date | Natural Date | Formatted Time | Natural Time
 
 **:exclamation: Important information about the command parameters**<br>
 
+`[written by: Low Ming Lim]`
+
 * `DATE`
     * Please use the prefix `d/` when indicating a `DATE` value in your user input.
     * Please note that the `DATE` used for scheduling an appointment must be set in the future.
@@ -267,6 +287,8 @@ Formatted Date | Natural Date | Formatted Time | Natural Time
 
 #### Viewing help : `help`
 
+`[written by: Lim Jin Hao]`
+
 Opens a new window which shows the commonly used commands, and a link to access the User Guide.
 
 ![Help Message](images/helpMessage.png)
@@ -274,6 +296,8 @@ Opens a new window which shows the commonly used commands, and a link to access 
 Format: `help`
 
 #### Undoing previous command : `undo`
+
+`[written by: Yang Yue]`
 
 Restores the patient and appointment book to the state before the previous *undoable* command was executed.
 `undo` command cannot reverse a command execution from the previous Nuudle session.
@@ -316,6 +340,8 @@ The `undo` command cancels the last undoable command `delete 1`, so that
 the patient `Alex Yeoh` comes back to the list again.
 
 #### Redoing the previously undone command : `redo`
+
+`[written by: Yang Yue]`
 
 Reverses the most recent `undo` command. `redo` command cannot reverse an `undo` execution from the previous Nuudle session.
 
@@ -361,6 +387,8 @@ Redo the `clear` command, which removes all the data again.
 
 #### Clearing all data : `clear`
 
+`[written by: Lim Jin Hao]`
+
 Clears all appointment and patients entries.
 
 Format: `clear`
@@ -379,6 +407,8 @@ Exits Nuudle.
 Format: `exit`
 
 #### Retrieving previously entered commands
+
+`[written by: Lim Jin Hao]`
 
 By pressing the <kbd>↑</kbd> and <kbd>↓</kbd> arrow keys in the *command box*, you can cycle through the previously executed commands.
 
@@ -401,15 +431,21 @@ With this feature, it saves you the hassle of having to retype the whole command
 
 #### Saving the data
 
+`[written by: Lim Jin Hao]`
+
 Nuudle automatically saves the patient and appointment data to your home folder after any changes are made to the data. There is no need for you to save manually.
 
 #### Archiving past appointments
+
+`[written by: Lim Jin Hao]`
 
 Nuudle automatically removes past appointments and saves them into an archive folder for your future reference. This is done automatically everytime you start up the Nuudle app.
 
 The appointments are grouped by their appointment months and saved in respective Comma-Separated Values (CSV) files. These files can be opened and viewed using Excel.
 
 #### Backing up the data
+
+`[written by: Lim Jin Hao]`
 
 Nuudle also keeps a backup of your data files from the previous Nuudle session in a backup folder. The backup data will be updated everytime you start up the Nuudle app.
 
@@ -420,6 +456,8 @@ This backup allows you to completely revert your data to the previous session's 
 ### Patient Management
 
 #### Adding a patient : `add`
+
+`[written by: Xin Zhe]`
 
 Adds a patient to the patient book.
 
@@ -446,6 +484,8 @@ The patient is now added to the patient book.<br>
 
 #### Editing a patient : `edit`
 
+`[written by: Jin Hao]`
+
 Edits a patient's particulars. Existing appointments involving the edited patient will be updated accordingly.
 
 Format: `edit PATIENT_INDEX [n/NAME] [i/NRIC] [p/PHONE_NUMBER] [a/ADDRESS] [r/REMARK] [t/TAG]…​`
@@ -470,6 +510,8 @@ The particulars of the edited patient is displayed in the *result display box*.<
 
 #### Deleting a patient : `delete`
 
+`[written by: Low Ming Lim]`
+
 Deletes a patient from the patient book.
 
 Format: `delete PATIENT_INDEX`
@@ -491,6 +533,8 @@ Step by step illustration:
 
 
 #### Adding a remark to a patient: `remark`
+
+`[written by: Low Ming Lim]`
 
 Looking to add additional data unique to your patient besides the basic fields? Look no further. Use this command to add or delete a remark to an existing patient.
 
@@ -537,6 +581,8 @@ Step by step illustration for deleting a remark:
 
 #### Listing all patients : `list`
 
+`[written by: Low Ming Lim]`
+
 If you like to reset the displayed patient or appointment book to it's original state after using a command like `find` or `view`, use this command to display the full list of all patients and appointments in NUUDLE.
 
 Format: `list`
@@ -548,7 +594,9 @@ Step by step illustration:
 2. Both the appointment and patient books are updated to display all patient and appointment data.
 ![ListCommand](images/ListCommand2.png)
 
-#### Locating patients by name : `find`
+#### Locating patients by name, NRIC or phone number : `find`
+
+`[written by: Zhang Wanlin]`
 
 Finds patients by name, NRIC or phone numbers.
 
@@ -581,6 +629,8 @@ Suppose you want to find a patient named as `alex` or with a phone number of `99
 
 #### Adding an appointment : `assign`
 
+`[written by: Zhang Wanlin]`
+
 Assigns the specified patient into the specified appointment date and time.
 
 Format: `assign PATIENT_INDEX d/DATE t/TIME [dur/DURATION]`
@@ -606,6 +656,8 @@ Suppose `Alex Yeoh`, the first patient in the list calls to book an appointment 
 ![AssignCommand2](images/Assign2.png)
 
 #### Reschedules an existing appointment: `change`
+
+`[written by: Low Ming Lim]`
 
 If a patient wish to change his/her appointment details, you can use this command to assist you. It helps you to reschedule or modify an existing appointment with a new date, time or duration.
 
@@ -654,6 +706,8 @@ and as a result, has to push her appointment time-slot back to 7pm.
 
 #### Canceling an appointment : `cancel`
 
+`[written by: Lim Jin Hao]`
+
 Cancels the specified appointment and removes it from the appointment book.
 
 Format `cancel APPT_INDEX`
@@ -677,6 +731,8 @@ The cancelled appointment details is also displayed in the *result display box*.
 
 #### Marking an appointment as done : `done`
 
+`[written by: Yang Yue]`
+
 Marks a specific appointment in the patient book as done.
 
 Format: `done APPT_INDEX`
@@ -699,6 +755,8 @@ Step-by-step illustration:
 
 #### Listing upcoming appointments by date : `view`
 
+`[written by: Zhang Wanlin]`
+
 Shows a list of all upcoming appointments entries or only the list of upcoming appointments happening on the specified date.
 
 Format `view [d/DATE]`
@@ -720,6 +778,8 @@ Suppose you want to check all the appointments on `05 nov 2021`, you can:
 ![ViewCommand2](images/View2.png)
 
 #### Listing available time slots by date : `avail`
+
+`[written by: Xin Zhe]`
 
 Shows a list of all available (free) time slots within the operation time of the clinic on a specified date. 
 The earliest available time slot on the specified date is also provided.
@@ -746,6 +806,9 @@ The list of appointments on the specified date is also displayed.<br>
 <div style="page-break-after: always;"></div>
 
 ### Command summary
+
+`[written by: Yang Yue]`
+
 #### General
 
 Action | Format
@@ -799,6 +862,8 @@ Action | Format | Examples
 <div style="page-break-after: always;"></div>
 
 ## Glossary
+
+`[written by: Zhang Wanlin]`
 
 This glossary provides definitions for the special terms used in the user guide.
 
