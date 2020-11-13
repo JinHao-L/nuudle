@@ -34,7 +34,7 @@ Interested? Continue reading on to explore the wonders of Nuudle and enhance the
 This document provides you with all necessary information on the installation and complete usage of Nuudle. You can find comprehensive descriptions of all available features in our [Commands](#commands) section and [Quick Start](#quick-start) section will help you with setting up.
 
 The guide also uses the following symbols and formatting:
-* Words that looks like [this]() can be clicked to navigate you to the related section of this user guide.
+* Words that looks like [this](#about) can be clicked to navigate you to the related section of this user guide.
 * Words that looks like *this* are words related to Nuudle's GUI.
 * Words that looks like `this` are words used in commands of Nuudle.
 * Words that looks like <kbd>this</kbd> are keys that you can press using your keyboard
@@ -75,8 +75,8 @@ Follow these steps to get started:
 
 1. Ensure you have **Java 11** or above installed on your Computer. 
     * To find out the Java version you have installed, click [here](https://www.java.com/en/download/help/version_manual.xml).
-    * If Java is not installed on your computer, click [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) to download it.
-
+    * If Java is not installed on your computer, click [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) to download it.<br>
+    
 1. Proceed to Nuudle's download page [here](https://github.com/ay2021s1-cs2103t-t12-4/tp/releases).
 
 1. Click on the link displayed in the following picture to download Nuudle's application file.
@@ -163,6 +163,8 @@ The main viewing area consists of the *Patient Book*, the *Appointment Book* and
 * The *Appointment Book* contains details about the appointments created by Nuudle. Here we take a look at a single entry in the Appointment Book 
 ![AppointmentCard](images/AppointmentCard.png)
 
+  <div style="page-break-after: always;"></div>
+
   * Similar to the Patient Index, the *Appointment Index* is a numbering system used in the Appointment Book.
   We use the term `APPT_INDEX` to refer to this numbering.
 
@@ -225,30 +227,6 @@ This section emphasises on the common format across all command input.
 * Parameters can be in any order.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
 
-* Indexes must be a **positive integer**: 1, 2, 3, ...
-
-* Date and time can be written using various commonly used formats or even using natural language.
-A summary of the supported formats and languages is shown in the table below:
-
-<div markdown="block" style="page-break-before: always; background-color: #f8f9fa; position: center" >
-
-Formatted Date | Natural Date | Formatted Time | Natural Time
-:---------------:|:----------------:|:----------------:|:----------------:
-02/12/2020 | Today | 2300 | Morning (8AM)
-02-12-2020 | Tomorrow | 11:00PM | Noon (12PM)
-12/02/2020 | Monday | 11.00PM | Evening (7PM)
-12-02-2020 | Tuesday | 11PM | Night (10PM)
-2020/12/02 | Wednesday |
-2020-12-02 | Thursday |
-2-Dec-2020 | Friday |
-2 Dec 2020 | Saturday |
-2-December-2020 | Sunday |
-2 December 2020 |
-
-</div>
-
-* For all date formats, the year can be omitted if it is the same as the current year.
-
 </div>
 
 <div markdown="block" class="alert alert-warning">
@@ -258,29 +236,38 @@ Formatted Date | Natural Date | Formatted Time | Natural Time
 `[written by: Low Ming Lim]`
 
 * `DATE`
-    * Please use the prefix `d/` when indicating a `DATE` value in your user input.
-    * Please note that the `DATE` used for scheduling an appointment must be set in the future.
-    * Please refer to the following [link](#command-format) for the different `DATE` formats we support in our Nuudle application.
+    * Please use the prefix `d/` when indicating a `DATE` value and prefix `t/` when indicating a `TIME` value in your user input.
+    * Please note that the `DATE` and `TIME` used for scheduling an appointment must be set in the future.
+    * The `DATE and `TIME` can be written using various commonly used formats or even using natural language.
+    The table below provides a brief summary of the supported formats and languages:
 
-* `TIME`
-    * Please use the prefix `t/` when indicating a `TIME` value in your user input.
-    * Please note that the `TIME` used for scheduling an appointment must be set in the future.
-    * Please refer to the following [link](#command-format) for the different `TIME` formats we support in our Nuudle application.
+    <div markdown="block" style="background-color: #f8f9fa; position: center" >
+    
+    Formatted Date | Natural Date | Formatted Time | Natural Time
+    :---------------:|:----------------:|:----------------:|:----------------:
+    02/12/2020 | Today | 2300 | Morning (8AM)
+    02-12-2020 | Tomorrow | 11:00PM | Noon (12PM)
+    12/02/2020 | Monday | 11.00PM | Evening (7PM)
+    12-02-2020 | Tuesday | 11PM | Night (10PM)
+    2020/12/02 | Wednesday |
+    2020-12-02 | Thursday |
+    2-Dec-2020 | Friday |
+    2 Dec 2020 | Saturday |
+    2-December-2020 | Sunday |
+    2 December 2020 |
+    
+    </div>
 
-<div style="page-break-after: always;"></div>
+    * For all date formats, the year can be omitted if it is the same as the current year.
+    * The day of the week will correspond to the nearest upcoming day of the week from the current date.
 
 * `APPT_INDEX` & `PATIENT_INDEX`
     * Unlike `DATE` and `TIME`, we do not require users to enter a prefix before the `INDEX` value.
     * Please note that the index used **must be a positive integer**. For example, valid index values include 1, 2, 3, etc …
     * The `APPT_INDEX` refers to the number shown in the displayed appointment book located on the right side of the UI.
     ![Appointment Index](images/CommandFormatAppt.png)
-    
-  <div style="page-break-after: always;"></div>
-
     * The `PATIENT_INDEX` refers to the number shown in the displayed patient book located on the left side of the UI.
     ![Patient Index](images/CommandFormatPatient.png)
-
-<div style="page-break-after: always;"></div>
 
 * `DURATION`
     * We measure our `DURATION` inputs in minutes. For example, to enter a `DURATION` of 1 hour, kindly use `dur/60` as the input value.
@@ -916,7 +903,7 @@ The list of appointments on the specified date is also displayed.<br>
 
 <div style="page-break-after: always;"></div>
 
-### Command summary
+### Command Summary
 
 `[written by: Yang Yue]`
 
