@@ -215,23 +215,17 @@ This section emphasises on the common format across all command input.
 
 `[written by: Zhang Wanlin]`
 
-* Commands in Nuudle starts with a command word, which will be used to identify the action to be taken.<br>
-  * e.g. commands beginning with `add ...` refers to a command which adds a patient into Nuudle.
-  
-* The characters before every `/` are prefixes that Nuudle uses to identify the different parameters used in a command.<br>
-  * e.g. prefixes such as `n/`, `d/` and `t/` corresponds to the name, date and time parameters in the command.
-
 * Words in **UPPER_CASE** are the parameters to be supplied by you.<br>
-  * e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
+  e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
 
 * Items in **square brackets** are optional fields that you can provide to provide additional details for the command execution.<br>
-  * e.g `n/NAME [t/TAG]` can be used as `n/John Doe t/hypertension` or as `n/John Doe`.
+  e.g `n/NAME [t/TAG]` can be used as `n/John Doe t/hypertension` or as `n/John Doe`.
 
 * Items with `…`​ after them can be used more than once.<br>
-  * e.g. `[t/TAG]…​` can be used as `t/friend`, `t/friend t/family` etc.
+  e.g. `[t/TAG]…​` can be used as `t/friend`, `t/friend t/family` etc.
 
 * Parameters can be used in any order.<br>
-  * e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
+  e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
 
 </div>
 
