@@ -215,16 +215,22 @@ This section emphasises on the common format across all command input.
 
 `[written by: Zhang Wanlin]`
 
-* Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
+* Commands will always begin with the command word, which Nuudle uses to identify the action to be taken.
+  e.g. commands beginning with `add ...` refers to a command which adds a patient details into Nuudle.
+  
+* The characters before every `/` are prefixes that Nuudle uses to identify the different parameters used in a command.
+  e.g. prefixes such as `n/`, `d/` and `t/` corresponds to the name, date and time parameters in the command.
+
+* Words in **UPPER_CASE** are the parameters to be supplied by you.<br>
   e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
 
-* Items in square brackets are optional.<br>
+* Items in **square brackets** are optional fields that you can provide to provide additional details for the command execution.<br>
   e.g `n/NAME [t/TAG]` can be used as `n/John Doe t/hypertension` or as `n/John Doe`.
 
-* Items with `…`​ after them can be used multiple times including zero times.<br>
+* Items with `…`​ after them can be used more than once or none at all.<br>
   e.g. `[t/TAG]…​` can be used as ` ` (i.e. 0 times), `t/friend`, `t/friend t/family` etc.
 
-* Parameters can be in any order.<br>
+* Parameters can be used in any order.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
 
 </div>
@@ -236,12 +242,13 @@ This section emphasises on the common format across all command input.
 `[written by: Low Ming Lim]`
 
 * `DATE`
-    * Please use the prefix `d/` when indicating a `DATE` value and prefix `t/` when indicating a `TIME` value in your user input.
+    * Please use the prefix `d/` when indicating a `DATE` value and the prefix `t/` when indicating a `TIME` value in your user input.
     * Please note that the `DATE` and `TIME` used for scheduling an appointment must be set in the future.
-    * The `DATE and `TIME` can be written using various commonly used formats or even using natural language.
+    * The `DATE` and `TIME` can be written using various commonly used formats or even using natural language.
+    <br>
     The table below provides a brief summary of the supported formats and languages:
 
-    <div markdown="block" style="background-color: #f8f9fa; position: center" >
+    <div markdown="block" style="background-color: #fdfdfd; position: center" >
     
     Formatted Date | Natural Date | Formatted Time | Natural Time
     :---------------:|:----------------:|:----------------:|:----------------:
