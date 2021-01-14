@@ -20,3 +20,10 @@ If you can type fast, Nuudle gets your appointment scheduling tasks done faster 
 
 * Libraries used: [JavaFX](https://openjfx.io/), [Jackson](https://github.com/FasterXML/jackson), [JUnit5](https://github.com/junit-team/junit5)
 * This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org)
+
+**Development Team**
+- [Lim Jin Hao](http://github.com/jinhao-l)
+- [Low Ming Lim](https://github.com/Avalionnet)
+- [Yang Yue](https://github.com/YangYue128-helen)
+- [Xin Zhe](http://github.com/xz0127)
+- [Zhang Wanlin](http://github.com/ZhangWanlin98)
