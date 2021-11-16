@@ -32,6 +32,8 @@ public class CsvAppointmentArchiveTest {
 
     private final Appointment expiredMay2010Appointment = new AppointmentBuilder(ALICE_APPOINTMENT)
             .withDate(LocalDate.of(2010, 5, 5)).build();
+    private final Appointment expiredMay2010Appointment2 = new AppointmentBuilder(BENSON_APPOINTMENT)
+            .withDate(LocalDate.of(2010, 5, 5)).build();
     private final Appointment expiredOct2010Appointment = new AppointmentBuilder(ALICE_APPOINTMENT)
             .withDate(LocalDate.of(2010, 10, 5)).build();
     private final Appointment expiredMay2009Appointment = new AppointmentBuilder(ALICE_APPOINTMENT)
@@ -112,6 +114,30 @@ public class CsvAppointmentArchiveTest {
         Path archiveFile = testFolder.resolve("2010_MAY.csv");
         List<CsvAdaptedAppointment> csvData = archive.readAppointments(archiveFile);
         assertEquals(List.of(new CsvAdaptedAppointment(expiredMay2010Appointment)), csvData);
+    }
+
+    @Test
+    public void archiveThenReadAppointmentBook_withMultipleExpiredAppointments_archiveSuccess() throws Exception {
+        CsvAppointmentArchive archive = new CsvAppointmentArchive(testFolder, new StorageStatsManager());
+
+        AppointmentBook appointmentBook = new AppointmentBook();
+        appointmentBook.setAppointments(List.of(expiredMay2010Appointment, expiredMay2010Appointment2,
+                BENSON_APPOINTMENT));
+
+        AppointmentBook expectedAppointmentBook = new AppointmentBook(appointmentBook);
+        expectedAppointmentBook.setAppointments(List.of(BENSON_APPOINTMENT));
+
+        // Check if appointment book returned is correct
+        ReadOnlyAppointmentBook upcomingAppointmentBook = archive.archivePastAppointments(appointmentBook);
+        assertEquals(expectedAppointmentBook, upcomingAppointmentBook);
+
+        // Check csv file
+        Path archiveFile = testFolder.resolve("2010_MAY.csv");
+        List<CsvAdaptedAppointment> csvData = archive.readAppointments(archiveFile);
+        assertEquals(
+                List.of(new CsvAdaptedAppointment(expiredMay2010Appointment),
+                        new CsvAdaptedAppointment(expiredMay2010Appointment2)),
+                csvData);
     }
 
     @Test

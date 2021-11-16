@@ -49,16 +49,16 @@ Given below are my contributions to the project.
 
 * **Documentation**:
   * User Guide:
-    * Authored Nuddle's introduction and document synopsis: [\#41]()
-    * Authored and improved our Quick Start segment to showcase a clear step by step illustration: [\#41](), [\#204]()
-    * Updated documentation details for the `add` and `delete` features [\#41]()
-    * Authored documentation details for the `remark`, `change` features [\#121](), [\#204]()
-    * Added step by step illustrations for the `list`, `delete`, `remark`, `change` features [\#122](), [\#204]()
+    * Authored Nuddle's introduction and document synopsis: [\#41](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/41)
+    * Authored and improved our Quick Start segment to showcase a clear step by step illustration: [\#41](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/41), [\#204](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/204)
+    * Updated documentation details for the `add` and `delete` features [\#41](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/41)
+    * Authored documentation details for the `remark`, `change` features [\#121](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/121), [\#204](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/204)
+    * Added step by step illustrations for the `list`, `delete`, `remark`, `change` features [\#122](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/122), [\#204](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/204)
     
   * Developer Guide:
-    * Authored the User Profile and Value Proposition segment. [\#43]()
-    * Updated and maintained the Logic component write up. [\#109]()
-    * Authored implementation details for the remark feature with the appropriate UML diagrams. [\#133]()
+    * Authored the User Profile and Value Proposition segment. [\#43](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/43)
+    * Updated and maintained the Logic component write up. [\#109](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/109)
+    * Authored implementation details for the remark feature with the appropriate UML diagrams. [\#133](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/133)
 
 * **Community**:
   * PRs reviewed (with non-trivial review comments): ([\#91](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/91), [\#95](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/95), [\#107](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/107), [\#113](https://github.com/AY2021S1-CS2103T-T12-4/tp/pull/113))

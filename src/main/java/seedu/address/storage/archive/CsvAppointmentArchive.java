@@ -67,8 +67,8 @@ public class CsvAppointmentArchive implements AppointmentArchive {
                     if (date != null && (date.getYear() != appointmentDate.getYear()
                             || date.getMonth() != appointmentDate.getMonth())) {
                         saveAppointments(pastAppointments, getFileName(date));
+                        pastAppointments.clear();
                     }
-                    pastAppointments.clear();
                     date = appointmentDate;
                 } else {
                     // no more expired appointments
